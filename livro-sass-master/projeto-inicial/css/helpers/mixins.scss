@@ -1,0 +1,30 @@
+// Mixins
+
+@mixin borda-arredondada($raio:0.3em)
+{
+  -webkit-border-radius: $raio; // estou criando o webkit
+   border-radius: $raio; //estou armazenando os valores
+
+   //para usarmos o mixin, precisamos chama-lo.
+   //usamos o @include + o nome do mixin. Estou chamando o mixin que criei na classe: .destaque button
+}
+
+
+
+// Extends
+
+//sombra dos botões
+%image-replacement
+{
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat:no-repeat;
+ 
+}
+
+//  Extends
+
+%sombra-padrao{
+  -webkit-box-shadow: 0 2p0x 6.65px 0.35px rgba(0 , 0 , 0 , 0.3);
+  box-shadow: 0 2px 6.65px 0.35 rgba(0 , 0 , 0 , 0.3);
+}
